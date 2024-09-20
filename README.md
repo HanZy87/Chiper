@@ -23,10 +23,11 @@ Cara menjalankan Program:
 2. Donwload File nya, kemudian ekstrak file nya
 3. Buka File Cripto.py di vscode
 4. Run filenya
-5. Pilih jenis Cyper yang anda inginkan
-6. Masukan Kunci dengan minimal 12 Char
-7. Pilih salah satu Encrypt atau Decrypt
-8. Output akan muncul di bawah
-9. Selamat Mencoba
+5. Masukan Plainteksnya atau bisa uopload file dengan format TxT
+6. Pilih jenis Cyper yang anda inginkan
+7. Masukan Kunci dengan minimal 12 Char
+8. Pilih salah satu Encrypt atau Decrypt
+9. Output akan muncul di bawah
+10. Selamat Mencoba
 
   
