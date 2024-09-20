@@ -1,5 +1,5 @@
 # Chiper (Kryptografi)
-**Encryption and Decryption Program**
+**Encryption dan Decryption**
 
 Berikut adalah program untuk melakukan Enkripsi dan Dekripsi basis txt menggunakan berbagai Algoritma, diantaranya:
 - Vignere
@@ -7,7 +7,7 @@ Berikut adalah program untuk melakukan Enkripsi dan Dekripsi basis txt menggunak
 - Hill
 
 Disclaimer: 
-1. kamu harus mempunyai VSCode, python, pastikan pyton yang kamu install sudah termasuk PIP, NumPy, dan juga TKTINKER
+1. Anda harus mempunyai VSCode, python, pastikan pyton yang kamu install sudah termasuk PIP, NumPy, dan juga TKTINKER
 2. pastikan extension py anda sudah terinstal di vscode anda
 3. cek pyton kamu dengan membuka CMD di pc/laptop kemudian ketik py --version. Jika muncul versi pyton berarti pyton kamu sudah ada dan terinstal jika not recognize anda bisa masuk ke environment variable untuk membuat path baru pada system variable anda. systen variable -> klik path -> new -> <arahkan ke directori dimana anda menginstal py sebelunya> -> ok
 4. Jika tktinker tidak ada instal di terminal CMD/vscode dengan mengetikan "pip install tk"
@@ -23,7 +23,10 @@ Cara menjalankan Program:
 2. Donwload File nya, kemudian ekstrak file nya
 3. Buka File Cripto.py di vscode
 4. Run filenya
-5. Upload file dengan format TxT
-6. Selamat Mencoba
+5. Pilih jenis Cyper yang anda inginkan
+6. Masukan Kunci dengan minimal 12 Char
+7. Pilih salah satu Encrypt atau Decrypt
+8. Output akan muncul di bawah
+9. Selamat Mencoba
 
   
