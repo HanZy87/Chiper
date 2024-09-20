@@ -26,8 +26,8 @@ Berikut adalah program untuk melakukan Enkripsi dan Dekripsi basis txt menggunak
 5. Masukan Plainteksnya atau bisa uopload file dengan format TxT
 6. Pilih jenis Cyper yang anda inginkan
 7. Masukan Kunci dengan minimal 12 Char
-8. Pilih salah satu Encrypt atau Decrypt
-9. Output akan muncul di bawah
-10. Selamat Mencoba
+8. Pilih salah satu Encrypt atau Decrypt (jika ingin decrypt copy hasil encrypt kemudian paste ke box plaintext kemudian tekan tombol decrypt)
+10. Output akan muncul di bawah
+11. Selamat Mencoba
 
   
