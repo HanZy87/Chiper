@@ -2,6 +2,13 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 import numpy as np
 
+def mod_inverse(a, m):
+    a = a % m
+    for x in range(1, m):
+        if (a * x) % m == 1:
+            return x
+    return 1
+
 def vigenere_encrypt(plaintext, key):
     key = key.upper()
     key_length = len(key)
@@ -112,10 +119,13 @@ def hill_decrypt(ciphertext, key):
     ciphertext_vector = [ord(char) - 65 for char in ciphertext]
     ciphertext_matrix = np.array(ciphertext_vector).reshape(-1, n)
     key_matrix = np.array(key)
-    key_inverse = np.linalg.inv(key_matrix).astype(float)
     determinant = int(round(np.linalg.det(key_matrix)))
-    adjugate_matrix = np.round(key_inverse * determinant).astype(int) % 26
-    plaintext_matrix = (np.dot(ciphertext_matrix, adjugate_matrix) % 26).astype(int)
+    determinant_inv = mod_inverse(determinant, 26)
+    
+    adjugate_matrix = np.round(np.linalg.inv(key_matrix) * determinant).astype(int) % 26
+    key_inverse = (determinant_inv * adjugate_matrix) % 26
+    
+    plaintext_matrix = (np.dot(ciphertext_matrix, key_inverse) % 26).astype(int)
     plaintext = ''.join([chr(num + 65) for num in plaintext_matrix.flatten()])
     return plaintext
 
