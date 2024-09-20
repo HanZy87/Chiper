@@ -140,7 +140,7 @@ root.title("Program Kriptografi")
 
 
 tk.Label(root, text="Masukkan Plainteks:").pack()
-plaintext_input = tk.Text(root, height=5, width=50)
+plaintext_input = tk.Text(root, height=2, width=50)
 plaintext_input.pack()
 
 
@@ -199,7 +199,7 @@ def decrypt_action():
 
 
 tk.Label(root, text="Hasil:").pack()
-result_text = tk.Text(root, height=5, width=50)
+result_text = tk.Text(root, height=2, width=50)
 result_text.pack()
 
 root.mainloop()
